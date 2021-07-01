@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="B &amp; S Cleaning Plus More" property="og:title">
+  
+    
         
     
     
@@ -39,7 +41,8 @@
 &lt;b&gt; Contact Us: &lt;/b&gt; Phone: (302) 249-7333 || Email: bscleaningplusmore@yahoo.com">
 
     
-   
+
+
 </head>
 <body>
 
@@ -164,7 +167,7 @@
     <div class="relative order-first lg:order-last block lg:w-1/2 ">
 
     
-        <img src="https://landing-page-app-hero-images.s3.amazonaws.com/media/Y02SCCBRU2RA64VO0DHW8XDNO6ZW6A9MNZN8L9LX.jpeg"  alt = "Main hero image of B &amp; S Cleaning Plus More performing Residential &amp; Commercial Cleaning work"  class="object-cover w-full lg:absolute h-80 lg:h-full">
+        <img src="https://landing-page-app-hero-images.s3.amazonaws.com/media/NUEBGNDM82969FDLOI92BALFY1NRAKBXV25PHX23.jpeg"  alt = "Main hero image of B &amp; S Cleaning Plus More performing Residential &amp; Commercial Cleaning work"  class="object-cover w-full lg:absolute h-80 lg:h-full">
     
     </div>
 </section>
@@ -368,83 +371,84 @@
             <div class="container relative flex flex-col justify-between h-full max-w-6xl px-10 mx-auto xl:px-0">
                 <h1 class="mb-3 text-3xl font-extrabold leading-none sm:text-4xl lg:text-7xl tracking-wide  text-center">Our Best Work</h1>
                 <h2 class="my-3 mb-10 text-xl font-medium  text-gray-400  text-center">See why our customers love us</h2>
-                <div class="flex flex-wrap md:mx-4 md:mb-8 md:flex-row" x-data="{ open:false }" @keydown.escape= "open = false"   >
+                <div class="flex flex-wrap md:mx-4 md:mb-8 md:flex-row" x-data="{ open:false, activeSlide : 0, slides: [   [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/DUWS991CM8LBV0BW3DUNQ2WDGN2NDPIBUDHJEC6S.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/GL9FDCK8Z38ZYJNRWZ9728MXD4XO5MFF3K6BAUUX.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/QQFDTSZ8ZT9UHBYB7UJK7OB29L7YF0KKV62Z1BFY.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/81LOH7UV7C9WOIC4X51MJT4AG9ZZ3ZTJAB9JFV9Y.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/SJJN436KKK9UTKK9THMCDT105OF9MICBG7U8REV4.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/44GETS4SRQCAWMJ2NNVD2NY1IYPI29TXRTXBJIHB.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/1SDZWCL00QOSWRAUEFPT3D7OPK2W2T9AL6WGNZF4.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/JOX6J02FDIG33VE7I9P4SAQYZ74J44KJD17P1GXU.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/W8VPST11H9ILAH46XKZLH357W45LDA03OTUEOXSV.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/670H2FG8MT4VD90S5ZD7H0IICPGZ9AZQ51DOUJ1L.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/UVC4HES4VWBINA37RZN7AEGH5WDEOM96LMHLVMT8.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/W1U78ZFIJAWTNHA9OVV37FOLC8CB0R76AJO8HER3.jpeg', 'photo'],   ] }" @keydown.escape= "open = false"   >
                                         
                             
                                   
-                            <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="open = true" ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/DUWS991CM8LBV0BW3DUNQ2WDGN2NDPIBUDHJEC6S.jpeg"  alt = "Photo number 1 of B &amp; S Cleaning Plus More&#x27;s best work performing a null job"   loading="lazy" ></div>
+                            <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 0; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/DUWS991CM8LBV0BW3DUNQ2WDGN2NDPIBUDHJEC6S.jpeg"  alt = "Photo number 1 of B &amp; S Cleaning Plus More&#x27;s best work performing a null job"   loading="lazy" ></div>
                         
                                         
                             
                                   
-                            <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="open = true" ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/GL9FDCK8Z38ZYJNRWZ9728MXD4XO5MFF3K6BAUUX.jpeg"  alt = "Photo number 2 of B &amp; S Cleaning Plus More&#x27;s best work performing a null job"   loading="lazy" ></div>
+                            <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 1; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/GL9FDCK8Z38ZYJNRWZ9728MXD4XO5MFF3K6BAUUX.jpeg"  alt = "Photo number 2 of B &amp; S Cleaning Plus More&#x27;s best work performing a null job"   loading="lazy" ></div>
                         
                                         
                             
                                   
-                            <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="open = true" ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/QQFDTSZ8ZT9UHBYB7UJK7OB29L7YF0KKV62Z1BFY.jpeg"  alt = "Photo number 3 of B &amp; S Cleaning Plus More&#x27;s best work performing a null job"   loading="lazy" ></div>
+                            <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 2; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/QQFDTSZ8ZT9UHBYB7UJK7OB29L7YF0KKV62Z1BFY.jpeg"  alt = "Photo number 3 of B &amp; S Cleaning Plus More&#x27;s best work performing a null job"   loading="lazy" ></div>
                         
                                         
                             
                                   
-                            <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="open = true" ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/81LOH7UV7C9WOIC4X51MJT4AG9ZZ3ZTJAB9JFV9Y.jpeg"  alt = "Photo number 4 of B &amp; S Cleaning Plus More&#x27;s best work performing a null job"   loading="lazy" ></div>
+                            <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 3; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/81LOH7UV7C9WOIC4X51MJT4AG9ZZ3ZTJAB9JFV9Y.jpeg"  alt = "Photo number 4 of B &amp; S Cleaning Plus More&#x27;s best work performing a null job"   loading="lazy" ></div>
                         
                                         
                             
                                   
-                            <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="open = true" ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/SJJN436KKK9UTKK9THMCDT105OF9MICBG7U8REV4.jpeg"  alt = "Photo number 5 of B &amp; S Cleaning Plus More&#x27;s best work performing a null job"   loading="lazy" ></div>
+                            <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 4; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/SJJN436KKK9UTKK9THMCDT105OF9MICBG7U8REV4.jpeg"  alt = "Photo number 5 of B &amp; S Cleaning Plus More&#x27;s best work performing a null job"   loading="lazy" ></div>
                         
                                         
                             
                                   
-                            <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="open = true" ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/44GETS4SRQCAWMJ2NNVD2NY1IYPI29TXRTXBJIHB.jpeg"  alt = "Photo number 6 of B &amp; S Cleaning Plus More&#x27;s best work performing a null job"   loading="lazy" ></div>
+                            <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 5; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/44GETS4SRQCAWMJ2NNVD2NY1IYPI29TXRTXBJIHB.jpeg"  alt = "Photo number 6 of B &amp; S Cleaning Plus More&#x27;s best work performing a null job"   loading="lazy" ></div>
                         
                                         
                             
                                   
-                            <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="open = true" ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/1SDZWCL00QOSWRAUEFPT3D7OPK2W2T9AL6WGNZF4.jpeg"  alt = "Photo number 7 of B &amp; S Cleaning Plus More&#x27;s best work performing a null job"   loading="lazy" ></div>
+                            <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 6; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/1SDZWCL00QOSWRAUEFPT3D7OPK2W2T9AL6WGNZF4.jpeg"  alt = "Photo number 7 of B &amp; S Cleaning Plus More&#x27;s best work performing a null job"   loading="lazy" ></div>
                         
                                         
                             
                                   
-                            <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="open = true" ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/JOX6J02FDIG33VE7I9P4SAQYZ74J44KJD17P1GXU.jpeg"  alt = "Photo number 8 of B &amp; S Cleaning Plus More&#x27;s best work performing a null job"   loading="lazy" ></div>
+                            <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 7; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/JOX6J02FDIG33VE7I9P4SAQYZ74J44KJD17P1GXU.jpeg"  alt = "Photo number 8 of B &amp; S Cleaning Plus More&#x27;s best work performing a null job"   loading="lazy" ></div>
                         
                                         
                             
                                   
-                            <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="open = true" ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/W8VPST11H9ILAH46XKZLH357W45LDA03OTUEOXSV.jpeg"  alt = "Photo number 9 of B &amp; S Cleaning Plus More&#x27;s best work performing a null job"   loading="lazy" ></div>
+                            <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 8; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/W8VPST11H9ILAH46XKZLH357W45LDA03OTUEOXSV.jpeg"  alt = "Photo number 9 of B &amp; S Cleaning Plus More&#x27;s best work performing a null job"   loading="lazy" ></div>
                         
                                         
                             
                                   
-                            <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="open = true" ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/670H2FG8MT4VD90S5ZD7H0IICPGZ9AZQ51DOUJ1L.jpeg"  alt = "Photo number 10 of B &amp; S Cleaning Plus More&#x27;s best work performing a null job"   loading="lazy" ></div>
+                            <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 9; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/670H2FG8MT4VD90S5ZD7H0IICPGZ9AZQ51DOUJ1L.jpeg"  alt = "Photo number 10 of B &amp; S Cleaning Plus More&#x27;s best work performing a null job"   loading="lazy" ></div>
                         
                                         
                             
                                   
-                            <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="open = true" ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/UVC4HES4VWBINA37RZN7AEGH5WDEOM96LMHLVMT8.jpeg"  alt = "Photo number 11 of B &amp; S Cleaning Plus More&#x27;s best work performing a null job"   loading="lazy" ></div>
+                            <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 10; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/UVC4HES4VWBINA37RZN7AEGH5WDEOM96LMHLVMT8.jpeg"  alt = "Photo number 11 of B &amp; S Cleaning Plus More&#x27;s best work performing a null job"   loading="lazy" ></div>
                         
                                         
                             
                                   
-                            <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="open = true" ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/W1U78ZFIJAWTNHA9OVV37FOLC8CB0R76AJO8HER3.jpeg"  alt = "Photo number 12 of B &amp; S Cleaning Plus More&#x27;s best work performing a null job"   loading="lazy" ></div>
+                            <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 11; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/W1U78ZFIJAWTNHA9OVV37FOLC8CB0R76AJO8HER3.jpeg"  alt = "Photo number 12 of B &amp; S Cleaning Plus More&#x27;s best work performing a null job"   loading="lazy" ></div>
                         
                      
                                         
             
                     <div class=" z-50 fixed top-0 left-0 w-full h-full flex items-center justify-center" x-show.transition="open" @click.away="open = false" >
+
+
                     
                     
                         <div class="flex items-center justify-start w-12 m-2 ml-6 mb-4 md:m-2 z-50 absolute bottom-0 transform translate-x-12 md:translate-x-32">
                         <button
-                                class="text-white w-12 h-12 rounded-full flex items-center justify-center focus:outline-none bg-opacity-75 bg-white"
-                                
+                                class="text-white w-12 h-12 rounded-full flex items-center justify-center focus:outline-none bg-opacity-75 bg-white"                                
                                 @click="open = false">
                              <span class = "text-black"> <i class="fas fa-lg fa-times"></i> </span>
                         </button>
                         </div>
 
-                        <div class= "h-90 w-90 flex items-center justify-center overflow-hidden" x-data="{activeSlide: 0, slides: [   [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/DUWS991CM8LBV0BW3DUNQ2WDGN2NDPIBUDHJEC6S.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/GL9FDCK8Z38ZYJNRWZ9728MXD4XO5MFF3K6BAUUX.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/QQFDTSZ8ZT9UHBYB7UJK7OB29L7YF0KKV62Z1BFY.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/81LOH7UV7C9WOIC4X51MJT4AG9ZZ3ZTJAB9JFV9Y.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/SJJN436KKK9UTKK9THMCDT105OF9MICBG7U8REV4.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/44GETS4SRQCAWMJ2NNVD2NY1IYPI29TXRTXBJIHB.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/1SDZWCL00QOSWRAUEFPT3D7OPK2W2T9AL6WGNZF4.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/JOX6J02FDIG33VE7I9P4SAQYZ74J44KJD17P1GXU.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/W8VPST11H9ILAH46XKZLH357W45LDA03OTUEOXSV.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/670H2FG8MT4VD90S5ZD7H0IICPGZ9AZQ51DOUJ1L.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/UVC4HES4VWBINA37RZN7AEGH5WDEOM96LMHLVMT8.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/W1U78ZFIJAWTNHA9OVV37FOLC8CB0R76AJO8HER3.jpeg', 'photo'],   ]}">
+                        <div class= "h-90 w-90 flex items-center justify-center overflow-hidden">
 
                             <template  x-for="(slide, index, collection) in slides" :key="index">
                                 <div class="h-full w-full flex items-center justify-center absolute">
@@ -460,6 +464,7 @@
                                         <template x-if="slide[1] === 'photo' ">
                                             <img :src="slide[0]" class="object-contain max-w-full max-h-full rounded shadow-lg" />
                                         </template>
+                                        
                                         <template x-if="slide[1] != 'photo'  ">
                                             <video class="object-contain max-w-full max-h-full rounded shadow-lg"  controls> <source :src="slide[0]" >
                                             </video>
@@ -750,7 +755,8 @@
         </div>
     </div>
 </section>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.8.0/alpine.js"></script>
+   
+   <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
 
 </body>
 </html>
